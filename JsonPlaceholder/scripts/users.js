@@ -7,12 +7,11 @@ window.onload = function() {
 
 function fillTable(){
     let userTable = document.getElementById("userTable");
-    let table = document.getElementById("userTable");
     fetch("http://jsonplaceholder.typicode.com/users")
     .then(response => response.json()) 
     .then(data => {
         for(let i=0; i<data.length; i++) {
-            let row = table.insertRow(-1);
+            let row = userTable.insertRow(-1);
             let cell1 = row.insertCell(0);
             let cell2 = row.insertCell(1);
             let cell3 = row.insertCell(2);
