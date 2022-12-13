@@ -20,7 +20,7 @@ function addBtnClicked () {
     })
     .then(result => result.json())
     .then(data => {
-        messageDiv.innerHTML = `Student ${data.id} added`})
+        messageDiv.innerHTML = `To do ${data.id} added`})
     .catch(err => {
         messageDiv.innerHTML = "Unexpected error";
     })

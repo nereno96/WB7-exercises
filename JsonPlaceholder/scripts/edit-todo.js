@@ -42,7 +42,7 @@ function updateBtnClicked (){
     })
     .then(response => response.json())
     .then(json => {
-        messageDiv.innerHTML = "Student updated";
+        messageDiv.innerHTML = "To do updated";
     })
     .catch(err => {
         messageDiv.innerHTML = "Unexpected error";
