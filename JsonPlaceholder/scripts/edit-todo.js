@@ -7,6 +7,8 @@ function init () {
     getBtn.onclick = getBtnClicked;
     const updateBtn = document.getElementById("updateBtn");
     updateBtn.onclick = updateBtnClicked;
+    const cancelBtn = document.getElementById("cancelBtn");
+    cancelBtn.onclick = cancelBtnClicked;
 }
 
 function getBtnClicked () {
@@ -45,4 +47,8 @@ function updateBtnClicked (){
     .catch(err => {
         messageDiv.innerHTML = "Unexpected error";
     });
+}
+
+function cancelBtnClicked () {
+    window.location.replace("index.html");
 }
